@@ -129,14 +129,13 @@ header .navbar ul li a{
     margin:1.5rem 0;
     color:#fff;
     font-size: 2rem;
-	
-
 	border-bottom: .1rem solid #fff4;
 	margin: 0;
 }
 
 header .navbar ul li a:hover{
     background:var(--yellow);
+	border-radius: 5px;
 }
 
 #menu{
@@ -285,6 +284,7 @@ header .navbar ul li a:hover{
     justify-content: center;
     flex-wrap: wrap;
     padding:2rem 0;
+	border-radius: 5px;
 }
 
 .portfolio .box-container .box{
@@ -293,12 +293,14 @@ header .navbar ul li a:hover{
     margin:2rem;
     overflow: hidden;
     cursor: pointer;
+	border-radius: 5px;
 }
 
 .portfolio .box-container .box img{
     height:100%;
     width:100%;
     object-fit: cover;
+	border-radius: 5px;
 }
 
 .portfolio .box-container .box:hover img{
@@ -454,9 +456,15 @@ a img:hover {
 	.workshop-videos{
 		width: 100%;
 	}
+	.arrow-position{
+		width: 100%;
+	}
     .contact .row form{
         margin:3rem 0;
     }
+	.portfolioinfo {
+		font-size: 50%;
+	}
 
  }
  ul, li {
@@ -485,10 +493,12 @@ a img:hover {
 .workshop-images{
 	max-width: 80%;
 	height: auto;
+	border-radius: 5px;
 }
 .workshop-videos{
 	max-width: 100%;
 	max-height: 100%;
+	border-radius: 5px;
 }
 iframe{
     height:50rem;
@@ -550,4 +560,7 @@ iframe{
 	border-right: solid transparent 2rem;
 	border-bottom: solid transparent 2rem;
 	text-align: center;
+}
+a{
+	color: #bb86fc;
 }
