@@ -55,7 +55,7 @@ section{
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
-    border-radius: 5rem;
+    border-radius: 5px;
 }
 
 .btn i{
@@ -465,7 +465,14 @@ a img:hover {
 	.portfolioinfo {
 		font-size: 50%;
 	}
-
+	.aut-box{
+		width: 70%;
+	}
+ }
+ .aut-box {
+	max-width: 70%;
+	height: auto;
+	border-radius: 5px;
  }
  ul, li {
 	font-size: 2rem;
