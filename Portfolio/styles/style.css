@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --yellow:#bb86fc;
+    --yellow:rgba(255, 255, 255, 0.527);
 }
 
 *{
@@ -12,9 +12,11 @@
     outline: none; border:none;
     text-transform: capitalize;
     transition: all .2s linear;
-	background-color: #121212;
 }
-
+.main-gradient{
+	background: rgb(140,61,193);
+    background: linear-gradient(90deg, #653e7e 0%, #7b502d 100%);
+}
 *::selection{
     background:var(--yellow);
     color:#333;
@@ -77,7 +79,7 @@ section{
 }
 
 .heading span{
-    color:var(--yellow);
+    color: #ffffff;
 }
 
 header{
@@ -85,13 +87,18 @@ header{
     top:0; left:0;
     z-index: 1000;
     height:100%;
-    width:40rem;
-    background:#121212;
+    width:38rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     text-align: center;
+    background: rgba(255, 255, 255, 0.171);
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.514), rgba(255, 255, 255, 0.137));
+    border-radius: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    z-index: 2;
+    backdrop-filter: blur(1rem);
 }
 
 header .user img{
@@ -100,17 +107,17 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid var(--yellow);
+    border:.2rem solid #000000;
 }
 
 header .user .name{
     font-size: 3.5rem;
-    color:#bb86fc;
+    color:rgb(0, 0, 0);
 }
 
 header .user .post{
     font-size: 2rem;
-    color:#eee;
+    color:rgb(0, 0, 0);
 }
 
 header .navbar{
@@ -127,7 +134,7 @@ header .navbar ul li a{
     display: block;
     padding:1rem;
     margin:1.5rem 0;
-    color:#fff;
+    color:rgb(0, 0, 0);
     font-size: 2rem;
 	border-bottom: .1rem solid #fff4;
 	margin: 0;
@@ -142,7 +149,7 @@ header .navbar ul li a:hover{
     position: fixed;
     top:2rem; right:2rem;
     background:#333;
-    color:#bb86fc;
+    color:#000000;
     cursor: pointer;
     font-size: 2.5rem;
     padding:1rem 1.5rem;
@@ -159,7 +166,7 @@ header .navbar ul li a:hover{
 
 .home h3{
     font-size: 2.5rem;
-    color:#fff;
+    color:rgb(0, 0, 0);
 }
 
 .home h1{
@@ -193,7 +200,7 @@ header .navbar ul li a:hover{
 
 .about .row .info h3{
     font-size: 2rem;
-    color:var(--yellow);
+    color:rgb(0, 0, 0);
     padding:1rem 0;
     font-weight: normal;
 }
@@ -294,6 +301,7 @@ header .navbar ul li a:hover{
     overflow: hidden;
     cursor: pointer;
 	border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .portfolio .box-container .box img{
@@ -331,7 +339,7 @@ header .navbar ul li a:hover{
     padding:1.5rem;
     margin:1rem 0;
     background:#3333;
-    color:#fff;
+    color:rgb(0, 0, 0);
     text-transform: none;
     font-size: 1.7rem;
     width:100%;
@@ -348,7 +356,7 @@ header .navbar ul li a:hover{
 
 .contact .row .content .title{
     text-transform: uppercase;
-    color:#fff;
+    color:rgb(255, 255, 255);
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -357,7 +365,7 @@ header .navbar ul li a:hover{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color:#eee;
+    color:rgb(255, 255, 255);
     padding:1rem 0;
     font-weight: normal;
 }
@@ -432,7 +440,7 @@ a img:hover {
 @media (max-width:320px){
 
     header{
-        width: 100vw;
+        width: 120vw;
     }
 
     .heading{
@@ -476,12 +484,12 @@ a img:hover {
  }
  ul, li {
 	font-size: 2rem;
-	color: white;
+	color: rgb(255, 255, 255);
 	padding-left: 2rem;
 }
 .portfolioinfo {
 	font-size: 2rem;
-	color: white;
+	color: rgb(255, 255, 255);
 	padding-left: 6rem;
 	padding-top: 1em;
 }
@@ -528,7 +536,7 @@ iframe{
 	width: 0rem;
 	border-top: solid transparent 2rem;
 	border-left: solid transparent 2rem;
-	border-right: solid #bb86fc 2rem;
+	border-right: solid #ffffff 2rem;
 	border-bottom: solid transparent 2rem;
 	text-align: center;
 }
@@ -537,7 +545,7 @@ iframe{
 	width: 0rem;
 	border-top: solid transparent 2rem;
 	border-left: solid transparent 2rem;
-	border-right: solid white 2rem;
+	border-right: solid rgb(107, 107, 107) 2rem;
 	border-bottom: solid transparent 2rem;
 }
 
@@ -545,7 +553,7 @@ iframe{
 	height: 0rem;
 	width: 0rem;
 	border-top: solid transparent 2rem;
-	border-left: solid #bb86fc 2rem; 
+	border-left: solid #ffffff 2rem; 
 	border-right: solid transparent 2rem;
 	border-bottom: solid transparent 2rem;
 	text-align: center;
@@ -555,7 +563,7 @@ iframe{
 	height: 0rem;
 	width: 0rem;
 	border-top: solid transparent 2rem;
-	border-left: solid white 2rem; 
+	border-left: solid rgb(107, 107, 107) 2rem;
 	border-right: solid transparent 2rem;
 	border-bottom: solid transparent 2rem;
 }
@@ -569,5 +577,5 @@ iframe{
 	text-align: center;
 }
 a{
-	color: #bb86fc;
+	color: #9b9b9b;
 }
