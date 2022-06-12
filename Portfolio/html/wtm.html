@@ -11,7 +11,7 @@
    <body class="main-gradient">
       <header>
          <div class="user">
-            <img src="../images/profilepicture.jpg" alt="Enrico Serrano">
+            <img src="../images/profilepicture.png" alt="Enrico Serrano">
             <h3 class="name">Enrico Serrano</h3>
             <p class="post">Software Developer</p>
             <p class="post">Information Technology</p>
@@ -42,10 +42,10 @@
       <section class="portfolio" id="portfolio">
          <h1 class="heading"><span>Who wants to be a millionaire Java App</span> </h1>
          <div class="portfolioinfo">
-            <p style="text-transform: none"></i>This Java app is inspired by the popular game 'Who wants to be a millionaire'</p>
-            <p style="text-transform: none"></i>It presents the player with 15-set randomised questions in which they get a reward for each questions answered correctly</p>
+            <p style="text-transform: none"></i>This Java app is inspired by the popular game 'Who wants to be a millionaire.'</p>
+            <p style="text-transform: none"></i>It presents the player with 15-set randomised questions in which they get a reward for each question answered correctly</p>
             <p style="text-transform: none"></i>At the end of every question answered correctly, the game will ask the player if they wish to continue or cash out of the game</p>
-            <p style="text-transform: none"></i>The player is given 1 lifeline (50/50) which will remove the other 2 choices leaving the player to choose between the remaining ones</p>
+            <p style="text-transform: none"></i>The player is given one lifeline (50/50), which will remove the other two choices leaving the player to choose between the remaining ones</p>
             <p style="text-transform: none"></i>This game features a leaderboard which will display the top 3 player's results</p>
             <p class="title" style="text-transform: none">Programming Languages Used: </p>
             <div class="portfoliolist">
@@ -57,12 +57,17 @@
             </a>
          </div>
          <div class="workshop-box-container">
-            <img src="../images/wtm1.png" alt="Who wants to be a millionaire" style='border:2px solid #000000' class="workshop-images">
-            <img src="../images/wtm2.png" alt="Who wants to be a millionaire" style='border:2px solid #000000' class="workshop-images">
-            <img src="../images/wtm3.png" alt="Who wants to be a millionaire" style='border:2px solid #000000' class="workshop-images">
-            <img src="../images/wtm4.png" alt="Who wants to be a millionaire"  style='border:2px solid #000000' class="workshop-images">
-            <img src="../images/wtm5.png" alt="Who wants to be a millionaire"  style='border:2px solid #000000' class="workshop-images">
-            <img src="../images/wtm6.png" alt="Who wants to be a millionaire"  style='border:2px solid #000000' class="workshop-images">
+            <div class="w3-content w3-display-container">
+               <img class="mySlides" src="../images/wtm0.png" style="width:100%">
+               <img class="mySlides" src="../images/wtm2.png" style="width:100%">
+               <img class="mySlides" src="../images/wtm3.png" style="width:100%">
+               <img class="mySlides" src="../images/wtm4.png" style="width:100%">
+               <img class="mySlides" src="../images/wtm5.png" style="width:100%">
+               <img class="mySlides" src="../images/wtm6.png" style="width:100%">
+             
+               <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+               <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+             </div>
             <div class="arrow-position">
                <a href="../html/workshop.html">
                   <div class="left-arrow">
@@ -81,4 +86,24 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="../scripts/script.js"></script>
    </body>
+   <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+   
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+  
+      </script>
 </html>

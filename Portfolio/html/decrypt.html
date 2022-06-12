@@ -11,7 +11,7 @@
    <body class="main-gradient">
       <header>
          <div class="user">
-            <img src="../images/profilepicture.jpg" alt="Enrico Serrano">
+            <img src="../images/profilepicture.png" alt="Enrico Serrano">
             <h3 class="name">Enrico Serrano</h3>
             <p class="post">Software Developer</p>
             <p class="post">Information Technology</p>
@@ -43,8 +43,8 @@
          <h1 class="heading"><span>De-Crypt It Unity Game</span> </h1>
          <div class="portfolioinfo">
             <p style="text-transform: none"></i>De-Crypt It is a unity game made as a group project for our Software Development Practice (SDP) at AUT</p>
-            <p style="text-transform: none"></i>It is a first person game which allows the player to interact with objects, find hints, complete puzzles, in order to escape</p>
-            <p style="text-transform: none"></i>It has 3 game modes (easy, medium, and hard) difficulty to support wide range of players with their escape room experience</p>
+            <p style="text-transform: none"></i>It is a first-person game which allows the player to interact with objects, find hints, and complete puzzles, to escape</p>
+            <p style="text-transform: none"></i>It has three game modes (easy, medium, and hard) difficulty to support a wide range of players with their escape room experience</p>
             <p class="title" style="text-transform: none">Easy Game Mode</p>
             <div class="portfoliolist">
                <p class="title" style="text-transform: none">15 Minutes of Gameplay</p>
@@ -57,12 +57,12 @@
             <div class="portfoliolist">
                <p class="title" style="text-transform: none">60 Minutes of Gameplay</p>
             </div>
-            <p style="text-transform: none"></i>It has an online leaderboard which tracks players result and displays it in the leaderboard (top 5)</p>
-            <p style="text-transform: none"></i>This project also features the use of AGILE and SCRUM to maintain project schedule, developmental process, and overall collaboration as a group</p>
+            <p style="text-transform: none"></i>It has an online leaderboard which tracks player's results and displays them on the leaderboard (top 5)</p>
+            <p style="text-transform: none"></i>This project also features the use of AGILE and SCRUM to maintain the project schedule, developmental process, and overall collaboration as a group</p>
             <p class="title" style="text-transform: none">Programming Languages Used: </p>
             <div class="portfoliolist">
                <p class="title" style="text-transform: none">Primarily C# and Unity tool</p>
-               <p class="title" style="text-transform: none">Dreamlo (plugin for database)</p>
+               <p class="title" style="text-transform: none">Dreamlo (plugin for the database)</p>
             </div>
             <a href="https://github.com/enricoserrano/De-Crypt-It" target=”_blank”>
                <p class="title" style="text-transform: none">View Source Code (GitHub)</p>
@@ -70,14 +70,21 @@
             <p style="text-transform: none"></i>Video presentation for Sprint 1 and Sprint 2</p>
          </div>
          <div class="workshop-box-container">
-            <iframe class="workshop-videos" style='border:2px solid #000000' src="https://www.youtube.com/embed/avTNOWxg8Oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>">
+            <iframe class="workshop-videos" style='border:2px solid #000000' src="https://www.youtube.com/embed/avTNOWxg8Oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe class="workshop-videos" style='border:2px solid #000000' src="https://www.youtube.com/embed/JUsdEeoZQSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <img src="../images/decrypt1.png" alt="De-Crypt It" style='border:2px solid #000000' class="workshop-images">
-            <img src="../images/decrypt2.png" alt="De-Crypt It" style='border:2px solid #000000' class="workshop-images">
-            <img src="../images/decrypt3.png" alt="De-Crypt It" style='border:2px solid #000000' class="workshop-images">
-            <img src="../images/decrypt4.png" alt="De-Crypt It" style='border:2px solid #000000' class="workshop-images">
-            <img src="../images/decrypt5.png" alt="De-Crypt It" style='border:2px solid #000000' class="workshop-images">
-            <img src="../images/decrypt6.png" alt="De-Crypt It" style='border:2px solid #000000' class="workshop-images">
+
+
+            <div class="w3-content w3-display-container">
+               <img class="mySlides" src="../images/decrypt1.png" style="width:100%">
+               <img class="mySlides" src="../images/decrypt2.png" style="width:100%">
+               <img class="mySlides" src="../images/decrypt3.png" style="width:100%">
+               <img class="mySlides" src="../images/decrypt4.png" style="width:100%">
+               <img class="mySlides" src="../images/decrypt5.png" style="width:100%">
+               <img class="mySlides" src="../images/decrypt6.png" style="width:100%">
+             
+               <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+               <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+             </div>
             <div class="arrow-position">
                <a href="../html/index.html">
                   <div class="left-arrow">
@@ -96,4 +103,24 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="../scripts/script.js"></script>
    </body>
+   <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+   
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+  
+      </script>
 </html>
