@@ -195,7 +195,6 @@ header .navbar ul li a:hover{
 .about .row .info{
     flex:1 1 48rem;
     padding:2rem 1rem;
-    padding-left: 6rem;
 }
 
 .about .row .info h3{
@@ -323,8 +322,7 @@ header .navbar ul li a:hover{
 
 .contact .row .content{
     flex:1 1 30rem;
-    padding:6rem;
-    padding-bottom: 0;
+    padding:2rem 3rem;
 }
 
 .contact .row form{
