@@ -293,8 +293,8 @@ header .navbar ul li a:hover{
 	border-radius: 5px;
 }
 .portfolio .box-container .box{
-    height: 20rem;
-    width:26rem;
+    height: 25rem;
+    width:33rem;
     margin:2rem;
     overflow: hidden;
     cursor: pointer;
@@ -383,7 +383,7 @@ header .navbar ul li a:hover{
   display: inline-block;
   float: left;
 }
-a {
+.iconspacer {
   margin-left: 2em;
 }
 
