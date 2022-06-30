@@ -703,3 +703,26 @@ a{
 	border-right: solid transparent 2rem;
 	border-bottom: solid transparent 2rem;
 }
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    background-color: white;
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+    border-radius: 1rem;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    background-color: white;
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+    border-radius: 1rem;
+}
+.box {
+    position: relative !important;
+}
